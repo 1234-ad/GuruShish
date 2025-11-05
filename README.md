@@ -89,19 +89,120 @@ Students often struggle to find reliable and available tuition teachers for spec
 
 ## 🔧 Setup Instructions
 
-```bash
-# 1. Clone the repo
-git clone https://github.com/yourusername/gurushish.git
-cd gurushish
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+- PostgreSQL database
 
-# 2. Install frontend dependencies
+### Installation
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/sailaja-adapa/gurushish.git
+cd gurushish
+```
+
+### Frontend Setup
+
+**2. Navigate to frontend directory and install dependencies**
+```bash
 cd frontend
 npm install
+```
 
-# 3. Install backend dependencies
+**3. Start the frontend development server**
+```bash
+npm run dev
+```
+The frontend will run on `http://localhost:3000`
+
+### Backend Setup
+
+**4. Open a new terminal, navigate to backend directory and install dependencies**
+```bash
+# From the project root directory
 cd backend
 npm install
+```
 
-# 4. Run both frontend and backend (in separate terminals)
-npm run dev  # for frontend
-npm run start : dev # for backend
+**5. Configure environment variables**
+```bash
+# Create a .env file in the backend directory
+# Add your PostgreSQL database credentials and other configurations
+```
+
+**6. Start the backend development server**
+```bash
+npm run start:dev
+```
+The backend will run on `http://localhost:3001` (or your configured port)
+
+---
+
+## 📝 Quick Start Commands
+
+### Option 1: Run Both Servers Separately (Recommended)
+
+**Terminal 1 - Frontend:**
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+**Terminal 2 - Backend:**
+```bash
+cd backend
+npm install
+npm run start:dev
+```
+
+### Option 2: One-liner Installation (Run from project root)
+
+```bash
+# Install all dependencies
+cd frontend && npm install && cd ../backend && npm install && cd ..
+
+# Then run servers in separate terminals as shown in Option 1
+```
+
+---
+
+## 🎯 Available Scripts
+
+### Frontend (Next.js)
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
+
+### Backend (NestJS)
+- `npm run start:dev` - Start development server with hot reload
+- `npm run start` - Start production server
+- `npm run build` - Build the application
+- `npm run test` - Run tests
+- `npm run lint` - Run ESLint
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+---
+
+## 📄 License
+
+This project is licensed under the terms specified in the LICENSE file.
+
+---
+
+## 📧 Contact
+
+For any queries or suggestions, feel free to reach out!
+
+---
+
+<div align="center">
+  Made with ❤️ by the Gurushish Team
+</div>
